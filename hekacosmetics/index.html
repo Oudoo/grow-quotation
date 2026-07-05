@@ -28,6 +28,7 @@
     <style>
         body { background-color: #f3f4f6; }
         .table-shadow { box-shadow: 0 4px 6px -1px rgba(90, 75, 129, 0.1), 0 2px 4px -1px rgba(90, 75, 129, 0.06); }
+        .elite-glow { box-shadow: 0 0 15px rgba(90, 75, 129, 0.15); }
     </style>
 </head>
 <body class="antialiased text-gray-800 p-4 md:p-8">
@@ -36,7 +37,7 @@
         <!-- Header -->
         <div class="p-8 md:p-12 border-b border-gray-100 flex flex-col justify-center items-center text-center">
             <div>
-                <h1 class="text-3xl font-bold text-brand mb-1">Partnership Investment & Scope</h1>
+                <h1 class="text-3xl font-bold text-brand mb-1">Investment & Scope</h1>
                 <p class="text-gray-500">Prepared for: <span class="font-semibold text-gray-800">Heka Cosmetics (Heka Wellness Hub)</span></p>
                 <p class="text-gray-400 text-sm mt-1">Ref: GC-HEKA-2026-004</p>
             </div>
@@ -50,70 +51,100 @@
             </p>
         </div>
 
-        <!-- Scope & Deliverables -->
-        <div class="p-8 md:p-12 border-b border-gray-100">
-            <h3 class="text-lg font-bold text-gray-800 mb-6 flex items-center gap-2">
-                <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                Core Deliverables
-            </h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gray-50 p-5 rounded-xl border border-gray-100">
-                    <h4 class="font-bold text-gray-800 mb-1">Brand Positioning & Identity</h4>
-                    <p class="text-sm text-gray-600">Visual shift from AI imagery to the credible "Greek Apothecary" aesthetic. Real photography and real textures.</p>
-                </div>
-                <div class="bg-gray-50 p-5 rounded-xl border border-gray-100">
-                    <h4 class="font-bold text-gray-800 mb-1">Educational Video Series</h4>
-                    <p class="text-sm text-gray-600">Flagship short-form content: "Ingredient of the Week" and "Ask the Apothecary" to drive young audience acquisition.</p>
-                </div>
-                <div class="bg-gray-50 p-5 rounded-xl border border-gray-100">
-                    <h4 class="font-bold text-gray-800 mb-1">Curated UGC Campaign</h4>
-                    <p class="text-sm text-gray-600">Rebuilt UGC strategy with curated micro-creators, focusing on relatable routines and herbal tea rituals.</p>
-                </div>
-                <div class="bg-gray-50 p-5 rounded-xl border border-gray-100">
-                    <h4 class="font-bold text-gray-800 mb-1">Media & Channel Strategy</h4>
-                    <p class="text-sm text-gray-600">Structured paid media pilot, shifting focus to Reels and TikTok-style formats for top-of-funnel reach.</p>
-                </div>
-            </div>
-        </div>
-
         <!-- Pricing Table -->
-        <div class="overflow-x-auto w-full scrollbar-hide" style="-webkit-overflow-scrolling: touch;">
+        <div class="overflow-x-auto w-full pb-4 scrollbar-hide" style="-webkit-overflow-scrolling: touch;">
             <table class="w-full min-w-[600px] text-left border-collapse">
+                <thead>
+                    <tr>
+                        <th class="p-6 bg-gray-50 w-1/2 border-b border-gray-200">
+                            <span class="text-lg font-bold text-gray-800">Deliverables & Features</span>
+                        </th>
+                        <th class="p-6 bg-brand w-1/2 text-center border-b-4 border-brand-dark elite-glow rounded-t-lg relative z-10">
+                            <div class="mb-2">
+                                <span class="inline-block bg-white text-brand text-xs font-bold px-3 py-1 rounded-full shadow-sm uppercase tracking-wide">Recommended</span>
+                            </div>
+                            <span class="block text-xl font-bold text-white">Full Ecosystem Plan</span>
+                        </th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-gray-100">
+                    <!-- Feature 1 -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 border-r border-gray-100">
+                            <p class="font-semibold text-gray-800">Brand Positioning & Identity</p>
+                            <p class="text-sm text-gray-500 mt-1">Visual shift from AI imagery to the credible "Greek Apothecary" aesthetic. Real photography and textures.</p>
+                        </td>
+                        <td class="p-5 text-center bg-brand-bg bg-opacity-50 border-l-2 border-r-2 border-brand relative z-10">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                        </td>
+                    </tr>
+
+                    <!-- Feature 2 -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 border-r border-gray-100">
+                            <p class="font-semibold text-gray-800">Educational Video Series</p>
+                            <p class="text-sm text-gray-500 mt-1">Flagship short-form content: "Ingredient of the Week" and "Ask the Apothecary".</p>
+                        </td>
+                        <td class="p-5 text-center bg-brand-bg bg-opacity-50 border-l-2 border-r-2 border-brand relative z-10">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                        </td>
+                    </tr>
+
+                    <!-- Feature 3 -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 border-r border-gray-100">
+                            <p class="font-semibold text-gray-800">Curated UGC Campaign</p>
+                            <p class="text-sm text-gray-500 mt-1">Rebuilt UGC strategy with curated micro-creators, focusing on relatable routines and rituals.</p>
+                        </td>
+                        <td class="p-5 text-center bg-brand-bg bg-opacity-50 border-l-2 border-r-2 border-brand relative z-10">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                        </td>
+                    </tr>
+
+                    <!-- Feature 4 -->
+                    <tr class="hover:bg-gray-50 transition-colors border-b-2 border-gray-100">
+                        <td class="p-5 border-r border-gray-100">
+                            <p class="font-semibold text-gray-800">Media & Channel Strategy</p>
+                            <p class="text-sm text-gray-500 mt-1">Structured paid media pilot, shifting focus to Reels and TikTok-style formats.</p>
+                        </td>
+                        <td class="p-5 text-center bg-brand-bg bg-opacity-50 border-l-2 border-r-2 border-brand relative z-10">
+                            <svg class="w-6 h-6 text-brand mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                        </td>
+                    </tr>
+
                     <!-- Month 1 Row -->
                     <tr>
-                        <td class="p-8 bg-white border-t-2 border-gray-100">
+                        <td class="p-6 bg-white text-right border-t-2 border-gray-100">
                             <p class="text-gray-500 text-sm mb-1 uppercase tracking-wider font-semibold">Phase 1: Foundation & Launch</p>
-                            <p class="text-brand font-bold uppercase tracking-wider text-lg mt-1">Month 1 Investment</p>
-                            <p class="text-sm text-gray-500 mt-2">Full ecosystem deployment, brand repositioning, and launch of the flagship educational series.</p>
+                            <p class="text-brand font-bold uppercase tracking-wider text-sm mt-1">Month 1 Investment</p>
                         </td>
-                        <td class="p-8 text-right bg-brand-bg border-l-2 border-brand relative z-10 shadow-inner w-1/3">
+                        <td class="p-6 text-center bg-brand-bg border-l-2 border-r-2 border-brand relative z-10 shadow-inner">
                             <p class="text-4xl font-extrabold text-brand">110,000 <span class="text-xl font-semibold text-brand-light">EGP</span></p>
                         </td>
                     </tr>
 
                     <!-- Month 2 Row -->
                     <tr class="group cursor-pointer">
-                        <td class="p-8 bg-gray-50 border-t border-gray-100 group-hover:bg-brand-bg transition-colors">
+                        <td class="p-6 bg-gray-50 text-right border-t border-gray-100 group-hover:bg-red-50 transition-colors">
                             <p class="text-gray-500 text-sm mb-1 uppercase tracking-wider font-semibold">Phase 2: Activation</p>
-                            <p class="text-brand font-bold uppercase tracking-wider text-lg mt-1">Month 2 Investment</p>
-                            <p class="text-sm text-gray-500 mt-2">Continued scaling, UGC pilot execution, and paid media campaign management.</p>
+                            <p class="text-brand font-bold uppercase tracking-wider text-sm mt-1">Month 2 Investment</p>
+                            <span class="inline-block mt-2 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase shadow-sm">Partnership Discount</span>
                         </td>
-                        <td class="p-8 text-right bg-gray-50 border-l border-t border-gray-100 group-hover:bg-brand-bg transition-colors w-1/3">
-                            <p class="text-gray-400 text-sm line-through decoration-brand-light">110,000 EGP</p>
-                            <p class="text-3xl font-extrabold text-gray-700">60,000 <span class="text-sm font-semibold text-gray-500">EGP</span></p>
+                        <td class="p-6 text-center bg-brand-bg border-l-2 border-r-2 border-brand relative z-10 shadow-inner group-hover:bg-red-50 transition-colors">
+                            <p class="text-gray-400 text-sm line-through decoration-red-400">110,000 EGP</p>
+                            <p class="text-3xl font-extrabold text-brand">60,000 <span class="text-sm font-semibold text-brand-light">EGP</span></p>
+                            <span class="inline-block mt-1 text-red-600 font-bold text-xs animate-pulse">Save 50,000 EGP!</span>
                         </td>
                     </tr>
 
                     <!-- Month 3+ Row -->
                     <tr>
-                        <td class="p-8 bg-white border-t border-gray-100">
+                        <td class="p-6 bg-white text-right border-t border-gray-100 rounded-bl-lg">
                             <p class="text-gray-500 text-sm mb-1 uppercase tracking-wider font-semibold">Phase 3: Scale & Retention</p>
-                            <p class="text-brand font-bold uppercase tracking-wider text-lg mt-1">Month 3 Onwards</p>
-                            <p class="text-sm text-gray-500 mt-2">Predictable flat monthly retainer covering ongoing management, content creation, and optimization.</p>
+                            <p class="text-brand font-bold uppercase tracking-wider text-sm mt-1">Month 3 Onwards</p>
                         </td>
-                        <td class="p-8 text-right bg-white border-l border-t border-gray-100 w-1/3">
-                            <p class="text-2xl font-bold text-gray-600">25,000 <span class="text-xs">EGP / mo</span></p>
+                        <td class="p-6 text-center bg-brand-bg border-l-2 border-r-2 border-b-2 border-brand rounded-b-lg relative z-10 shadow-inner">
+                            <p class="text-2xl font-bold text-brand">25,000 <span class="text-xs">EGP / mo</span></p>
                         </td>
                     </tr>
                 </tbody>
@@ -140,20 +171,36 @@
             </ul>
         </div>
 
-        <!-- Payment Terms Box -->
-        <div class="mx-8 mb-8 p-6 bg-white rounded-xl border-2 border-brand shadow-sm">
-            <h3 class="text-lg font-bold text-brand mb-3 flex items-center gap-2">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                Payment Terms
-            </h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-3">
-                To initiate the project, begin the strategic repositioning, and secure the onboarding slot, a <strong class="text-gray-800">50% upfront payment</strong> of the Month 1 Investment (55,000 EGP) is required.
-            </p>
-            <p class="text-gray-600 text-sm leading-relaxed">
-                The remaining 50% is due based on mutually agreed deployment milestones during the first month.
-            </p>
+        <!-- Unified Roadmap & Payment Terms Section -->
+        <div class="mx-8 mb-8 p-8 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row items-start justify-between gap-8">
+            <div class="flex-1">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Your Growth Journey</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-2">
+                    <span class="font-semibold text-brand">Month 1:</span> Full ecosystem deployment, setup, and launch.
+                </p>
+                <p class="text-gray-600 text-sm leading-relaxed mb-2">
+                    <span class="font-semibold text-brand">Month 2:</span> Continued scaling and campaign optimization at a heavily discounted partnership rate.
+                </p>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    <span class="font-semibold text-brand">Month 3+:</span> Predictable flat monthly retainer covering ongoing management, optimization, VIP support, and technical maintenance.
+                </p>
+            </div>
+            
+            <!-- Payment Terms Box -->
+            <div class="w-full md:w-1/2 bg-white p-6 rounded-xl border-2 border-brand shadow-sm">
+                <h3 class="text-lg font-bold text-brand mb-3 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Payment Terms
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                    To initiate the project and secure your onboarding slot, a <strong class="text-gray-800">50% upfront payment</strong> of the Month 1 Investment (55,000 EGP) is required.
+                </p>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    The remaining 50% is due based on mutually agreed deployment milestones during the first month.
+                </p>
+            </div>
         </div>
 
     </div>
