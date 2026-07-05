@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow CDX - Heka Cosmetics Quotation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#8b7eb3',
+                            DEFAULT: '#5a4b81',
+                            dark: '#3e3359',
+                            bg: '#fcfbfa'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #f3f4f6; }
+        .table-shadow { box-shadow: 0 4px 6px -1px rgba(90, 75, 129, 0.1), 0 2px 4px -1px rgba(90, 75, 129, 0.06); }
+    </style>
+</head>
+<body class="antialiased text-gray-800 p-4 md:p-8">
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl table-shadow overflow-hidden">
+        
+        <!-- Header -->
+        <div class="p-8 md:p-12 border-b border-gray-100 flex flex-col justify-center items-center text-center">
+            <div>
+                <h1 class="text-3xl font-bold text-brand mb-1">Partnership Investment & Scope</h1>
+                <p class="text-gray-500">Prepared for: <span class="font-semibold text-gray-800">Heka Cosmetics (Heka Wellness Hub)</span></p>
+                <p class="text-gray-400 text-sm mt-1">Ref: GC-HEKA-2026-004</p>
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <div class="bg-brand-bg p-8 text-center border-b border-gray-100">
+            <h2 class="text-xl md:text-2xl font-semibold text-brand-dark mb-2">Growth & Marketing Transition</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Executing the strategic repositioning to the "Modern Apothecary," launching the flagship educational series, sourcing curated UGC, and piloting paid acquisition.
+            </p>
+        </div>
+
+        <!-- Scope & Deliverables -->
+        <div class="p-8 md:p-12 border-b border-gray-100">
+            <h3 class="text-lg font-bold text-gray-800 mb-6 flex items-center gap-2">
+                <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                Core Deliverables
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-5 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-gray-800 mb-1">Brand Positioning & Identity</h4>
+                    <p class="text-sm text-gray-600">Visual shift from AI imagery to the credible "Greek Apothecary" aesthetic. Real photography and real textures.</p>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-gray-800 mb-1">Educational Video Series</h4>
+                    <p class="text-sm text-gray-600">Flagship short-form content: "Ingredient of the Week" and "Ask the Apothecary" to drive young audience acquisition.</p>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-gray-800 mb-1">Curated UGC Campaign</h4>
+                    <p class="text-sm text-gray-600">Rebuilt UGC strategy with curated micro-creators, focusing on relatable routines and herbal tea rituals.</p>
+                </div>
+                <div class="bg-gray-50 p-5 rounded-xl border border-gray-100">
+                    <h4 class="font-bold text-gray-800 mb-1">Media & Channel Strategy</h4>
+                    <p class="text-sm text-gray-600">Structured paid media pilot, shifting focus to Reels and TikTok-style formats for top-of-funnel reach.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="overflow-x-auto w-full scrollbar-hide" style="-webkit-overflow-scrolling: touch;">
+            <table class="w-full min-w-[600px] text-left border-collapse">
+                <tbody class="divide-y divide-gray-100">
+                    <!-- Month 1 Row -->
+                    <tr>
+                        <td class="p-8 bg-white border-t-2 border-gray-100">
+                            <p class="text-gray-500 text-sm mb-1 uppercase tracking-wider font-semibold">Phase 1: Foundation & Launch</p>
+                            <p class="text-brand font-bold uppercase tracking-wider text-lg mt-1">Month 1 Investment</p>
+                            <p class="text-sm text-gray-500 mt-2">Full ecosystem deployment, brand repositioning, and launch of the flagship educational series.</p>
+                        </td>
+                        <td class="p-8 text-right bg-brand-bg border-l-2 border-brand relative z-10 shadow-inner w-1/3">
+                            <p class="text-4xl font-extrabold text-brand">110,000 <span class="text-xl font-semibold text-brand-light">EGP</span></p>
+                        </td>
+                    </tr>
+
+                    <!-- Month 2 Row -->
+                    <tr class="group cursor-pointer">
+                        <td class="p-8 bg-gray-50 border-t border-gray-100 group-hover:bg-brand-bg transition-colors">
+                            <p class="text-gray-500 text-sm mb-1 uppercase tracking-wider font-semibold">Phase 2: Activation</p>
+                            <p class="text-brand font-bold uppercase tracking-wider text-lg mt-1">Month 2 Investment</p>
+                            <p class="text-sm text-gray-500 mt-2">Continued scaling, UGC pilot execution, and paid media campaign management.</p>
+                        </td>
+                        <td class="p-8 text-right bg-gray-50 border-l border-t border-gray-100 group-hover:bg-brand-bg transition-colors w-1/3">
+                            <p class="text-gray-400 text-sm line-through decoration-brand-light">110,000 EGP</p>
+                            <p class="text-3xl font-extrabold text-gray-700">60,000 <span class="text-sm font-semibold text-gray-500">EGP</span></p>
+                        </td>
+                    </tr>
+
+                    <!-- Month 3+ Row -->
+                    <tr>
+                        <td class="p-8 bg-white border-t border-gray-100">
+                            <p class="text-gray-500 text-sm mb-1 uppercase tracking-wider font-semibold">Phase 3: Scale & Retention</p>
+                            <p class="text-brand font-bold uppercase tracking-wider text-lg mt-1">Month 3 Onwards</p>
+                            <p class="text-sm text-gray-500 mt-2">Predictable flat monthly retainer covering ongoing management, content creation, and optimization.</p>
+                        </td>
+                        <td class="p-8 text-right bg-white border-l border-t border-gray-100 w-1/3">
+                            <p class="text-2xl font-bold text-gray-600">25,000 <span class="text-xs">EGP / mo</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Optional Technical Add-ons -->
+        <div class="m-8 p-6 bg-gray-50 rounded-xl border border-gray-200 shadow-sm">
+            <h3 class="text-lg font-bold text-gray-800 mb-3">Optional Technical Upgrades (Not included)</h3>
+            <p class="text-sm text-gray-600 mb-4">The following operational solutions are scoped separately and are not part of the standard marketing retainer.</p>
+            <ul class="text-sm text-gray-600 space-y-2">
+                <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span><strong>Omnichannel Chatbot:</strong> Automated instant replies on Instagram/Meta with direct Shopify purchase links.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span><strong>Shopify & Odoo ERP Integration:</strong> Real-time inventory sync between factory and online store.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <svg class="w-4 h-4 text-brand mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                    <span><strong>Zero-Touch Logistics:</strong> Fully automated dispatch, label printing, and WhatsApp tracking links.</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Payment Terms Box -->
+        <div class="mx-8 mb-8 p-6 bg-white rounded-xl border-2 border-brand shadow-sm">
+            <h3 class="text-lg font-bold text-brand mb-3 flex items-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Payment Terms
+            </h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                To initiate the project, begin the strategic repositioning, and secure the onboarding slot, a <strong class="text-gray-800">50% upfront payment</strong> of the Month 1 Investment (55,000 EGP) is required.
+            </p>
+            <p class="text-gray-600 text-sm leading-relaxed">
+                The remaining 50% is due based on mutually agreed deployment milestones during the first month.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

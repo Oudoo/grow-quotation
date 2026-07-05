@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow CDX - Tiered Quotation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#8b7eb3',
+                            DEFAULT: '#5a4b81',
+                            dark: '#3e3359',
+                            bg: '#fcfbfa'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f3f4f6;
+        }
+
+        .table-shadow {
+            box-shadow: 0 4px 6px -1px rgba(90, 75, 129, 0.1), 0 2px 4px -1px rgba(90, 75, 129, 0.06);
+        }
+
+        .elite-glow {
+            box-shadow: 0 0 15px rgba(90, 75, 129, 0.15);
+        }
+    </style>
+</head>
+
+<body class="antialiased text-gray-800 p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto bg-white rounded-2xl table-shadow overflow-hidden">
+
+        <!-- Header -->
+        <div class="p-8 md:p-12 border-b border-gray-100 flex flex-col justify-center items-center text-center">
+            <div>
+                <h1 class="text-3xl font-bold text-brand mb-1">Investment & Scope Tiers</h1>
+                <p class="text-gray-500">Prepared for: <span class="font-semibold text-gray-800">Nour Clinic Elite
+                        (Prof. Ahmed Adel Nour-Eldin)</span></p>
+                <p class="text-gray-400 text-sm mt-1">Ref: GC-NCE-2026-003</p>
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <div class="bg-brand-bg p-8 text-center border-b border-gray-100">
+            <h2 class="text-xl md:text-2xl font-semibold text-brand-dark mb-2">Month 1: Setup & Full Activation
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Select the launch package that aligns with your growth targets.
+                All selected features and deliverables are deployed from Day 1.
+            </p>
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="overflow-x-auto w-full pb-4 scrollbar-hide" style="-webkit-overflow-scrolling: touch;">
+            <table class="w-full min-w-[800px] text-left border-collapse">
+                <thead>
+                    <tr>
+                        <th class="p-6 bg-gray-50 w-1/3 border-b border-gray-200">
+                            <span class="text-lg font-bold text-gray-800">Deliverables & Features</span>
+                        </th>
+                        <th class="p-6 bg-white w-1/5 text-center border-b border-gray-200 border-l border-gray-100">
+                            <span class="block text-xl font-bold text-gray-700">Tier 3</span>
+                            <span class="block text-sm font-normal text-gray-500 mt-1">Basic Entry</span>
+                        </th>
+                        <th class="p-6 bg-white w-1/5 text-center border-b border-gray-200 border-l border-gray-100">
+                            <span class="block text-xl font-bold text-gray-700">Tier 2</span>
+                            <span class="block text-sm font-normal text-gray-500 mt-1">Standard Growth</span>
+                        </th>
+                        <th
+                            class="p-6 bg-brand w-1/5 text-center border-b-4 border-brand-dark elite-glow rounded-t-lg relative z-10">
+                            <div class="mb-2">
+                                <span
+                                    class="inline-block bg-white text-brand text-xs font-bold px-3 py-1 rounded-full shadow-sm uppercase tracking-wide">Recommended</span>
+                            </div>
+                            <span class="block text-xl font-bold text-white">Tier 1</span>
+                            <span class="block text-sm font-normal text-brand-100 text-gray-200 mt-1">Elite
+                                Dominance</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    <!-- Feature 1 -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 border-r border-gray-100">
+                            <p class="font-semibold text-gray-800">Strategic Consultation & Planning</p>
+                            <p class="text-sm text-gray-500 mt-1">Audit, roadmap, and funnel mapping.</p>
+                        </td>
+                        <td class="p-5 text-center border-r border-gray-100">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </td>
+                        <td class="p-5 text-center border-r border-gray-100">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </td>
+                        <td
+                            class="p-5 text-center bg-brand-bg bg-opacity-50 border-l-2 border-r-2 border-brand relative z-10">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </td>
+                    </tr>
+
+                    <!-- Feature 2 -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 border-r border-gray-100">
+                            <p class="font-semibold text-gray-800">Ecosystem Activation</p>
+                            <p class="text-sm text-gray-500 mt-1">CRM, Medicalize integration, and campaign launch.</p>
+                        </td>
+                        <td class="p-5 text-center border-r border-gray-100">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </td>
+                        <td class="p-5 text-center border-r border-gray-100">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </td>
+                        <td
+                            class="p-5 text-center bg-brand-bg bg-opacity-50 border-l-2 border-r-2 border-brand relative z-10">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </td>
+                    </tr>
+
+                    <!-- Feature 3 (The differentiator) -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 border-r border-gray-100">
+                            <p class="font-semibold text-gray-800">Launch Shooting & Video Revamp</p>
+                            <p class="text-sm text-gray-500 mt-1">On-site content creation, surgeon-led masterclasses,
+                                and visual overhaul.</p>
+                        </td>
+                        <td class="p-5 text-center border-r border-gray-100 bg-gray-50">
+                            <svg class="w-6 h-6 text-gray-300 mx-auto mb-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            <span class="text-xs text-gray-400 font-medium">Uses existing assets</span>
+                        </td>
+                        <td class="p-5 text-center border-r border-gray-100">
+                            <svg class="w-6 h-6 text-brand mx-auto mb-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-xs text-brand font-medium">Standard Shoot</span>
+                        </td>
+                        <td
+                            class="p-5 text-center bg-brand-bg bg-opacity-50 border-l-2 border-r-2 border-brand relative z-10">
+                            <svg class="w-6 h-6 text-brand mx-auto mb-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-xs text-brand font-bold">Full Scale Production</span>
+                        </td>
+                    </tr>
+
+                    <!-- Feature 4 -->
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="p-5 border-r border-gray-100">
+                            <p class="font-semibold text-gray-800">Custom Subdomain Dashboard</p>
+                            <p class="text-sm text-gray-500 mt-1">Real-time portal to monitor project KPIs, metrics, and
+                                progress.</p>
+                        </td>
+                        <td class="p-5 text-center border-r border-gray-100 bg-gray-50">
+                            <svg class="w-6 h-6 text-gray-300 mx-auto mb-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                            <span class="text-xs text-gray-400 font-medium">No live access</span>
+                        </td>
+                        <td class="p-5 text-center border-r border-gray-100">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </td>
+                        <td
+                            class="p-5 text-center bg-brand-bg bg-opacity-50 border-l-2 border-r-2 border-brand relative z-10">
+                            <svg class="w-6 h-6 text-brand mx-auto" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </td>
+                    </tr>
+
+                    <!-- Feature 5 -->
+                    <tr class="hover:bg-gray-50 transition-colors border-b-2 border-gray-100">
+                        <td class="p-5 border-r border-gray-100">
+                            <p class="font-semibold text-gray-800">Priority Dedicated Support</p>
+                            <p class="text-sm text-gray-500 mt-1">Strategic and technical support availability.</p>
+                        </td>
+                        <td class="p-5 text-center border-r border-gray-100 bg-gray-50">
+                            <span class="text-sm text-gray-500 font-medium">Business hours</span>
+                        </td>
+                        <td class="p-5 text-center border-r border-gray-100 bg-gray-50">
+                            <span class="text-sm text-gray-500 font-medium">Business hours</span>
+                        </td>
+                        <td
+                            class="p-5 text-center bg-brand-bg bg-opacity-50 border-l-2 border-r-2 border-brand relative z-10">
+                            <svg class="w-6 h-6 text-brand mx-auto mb-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-xs text-brand font-bold">24/7 VIP Access</span>
+                        </td>
+                    </tr>
+
+                    <!-- Month 1 Row -->
+                    <tr>
+                        <td class="p-6 bg-white text-right border-t-2 border-gray-100">
+                            <p class="text-gray-500 text-sm mb-1 uppercase tracking-wider font-semibold">Initial Setup
+                            </p>
+                            <p class="text-brand font-bold uppercase tracking-wider text-sm mt-1">Month 1 Investment</p>
+                        </td>
+                        <td class="p-6 text-center bg-white border-l border-t-2 border-gray-100">
+                            <p class="text-3xl font-extrabold text-gray-800">75,000 <span
+                                    class="text-lg font-semibold text-gray-500">EGP</span></p>
+                        </td>
+                        <td class="p-6 text-center bg-white border-l border-t-2 border-gray-100">
+                            <p class="text-3xl font-extrabold text-gray-800">90,000 <span
+                                    class="text-lg font-semibold text-gray-500">EGP</span></p>
+                        </td>
+                        <td
+                            class="p-6 text-center bg-brand-bg border-l-2 border-r-2 border-brand relative z-10 shadow-inner">
+                            <p class="text-4xl font-extrabold text-brand">130,000 <span
+                                    class="text-xl font-semibold text-brand-light">EGP</span></p>
+                        </td>
+                    </tr>
+
+                    <!-- Month 2 Row -->
+                    <tr class="group cursor-pointer">
+                        <td
+                            class="p-6 bg-gray-50 text-right border-t border-gray-100 group-hover:bg-red-50 transition-colors">
+                            <p class="text-gray-500 text-sm mb-1 uppercase tracking-wider font-semibold">Continued
+                                Scaling</p>
+                            <p class="text-brand font-bold uppercase tracking-wider text-sm mt-1">Month 2 Investment</p>
+                            <span
+                                class="inline-block mt-2 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase shadow-sm">40%
+                                Partnership Discount</span>
+                        </td>
+                        <td
+                            class="p-6 text-center bg-gray-50 border-l border-t border-gray-100 group-hover:bg-red-50 transition-colors">
+                            <p class="text-gray-400 text-sm line-through decoration-red-300">75,000 EGP</p>
+                            <p class="text-2xl font-extrabold text-gray-700">50,000 <span
+                                    class="text-sm font-semibold text-gray-500">EGP</span></p>
+                        </td>
+                        <td
+                            class="p-6 text-center bg-gray-50 border-l border-t border-gray-100 group-hover:bg-red-50 transition-colors">
+                            <p class="text-gray-400 text-sm line-through decoration-red-300">90,000 EGP</p>
+                            <p class="text-2xl font-extrabold text-gray-700">65,000 <span
+                                    class="text-sm font-semibold text-gray-500">EGP</span></p>
+                        </td>
+                        <td
+                            class="p-6 text-center bg-brand-bg border-l-2 border-r-2 border-brand relative z-10 shadow-inner group-hover:bg-red-50 transition-colors">
+                            <p class="text-gray-400 text-sm line-through decoration-red-400">130,000 EGP</p>
+                            <p class="text-3xl font-extrabold text-brand">85,000 <span
+                                    class="text-sm font-semibold text-brand-light">EGP</span></p>
+                            <span class="inline-block mt-1 text-red-600 font-bold text-xs animate-pulse">Save 35,000
+                                EGP!</span>
+                        </td>
+                    </tr>
+
+                    <!-- Month 3+ Row -->
+                    <tr>
+                        <td class="p-6 bg-white text-right border-t border-gray-100 rounded-bl-lg">
+                            <p class="text-gray-500 text-sm mb-1 uppercase tracking-wider font-semibold">Ongoing
+                                Retainer</p>
+                            <p class="text-brand font-bold uppercase tracking-wider text-sm mt-1">Month 3 Onwards</p>
+                        </td>
+                        <td class="p-6 text-center bg-white border-l border-t border-gray-100">
+                            <p class="text-xl font-bold text-gray-600">30,000 <span class="text-xs">EGP / mo</span></p>
+                        </td>
+                        <td class="p-6 text-center bg-white border-l border-t border-gray-100">
+                            <p class="text-xl font-bold text-gray-600">30,000 <span class="text-xs">EGP / mo</span></p>
+                        </td>
+                        <td
+                            class="p-6 text-center bg-brand-bg border-l-2 border-r-2 border-b-2 border-brand rounded-b-lg relative z-10 shadow-inner">
+                            <p class="text-2xl font-bold text-brand">30,000 <span class="text-xs">EGP / mo</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Unified Roadmap & Payment Terms Section -->
+        <div
+            class="m-8 p-8 bg-gradient-to-br from-gray-50 to-white rounded-xl border border-gray-100 shadow-sm flex flex-col md:flex-row items-start justify-between gap-8">
+            <div class="flex-1">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Your Growth Journey</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-2">
+                    <span class="font-semibold text-brand">Month 1:</span> Full ecosystem deployment, setup, and launch
+                    based on your selected tier.
+                </p>
+                <p class="text-gray-600 text-sm leading-relaxed mb-2">
+                    <span class="font-semibold text-brand">Month 2:</span> Continued scaling and campaign optimization
+                    at a heavily discounted partnership rate.
+                </p>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    <span class="font-semibold text-brand">Month 3+:</span> Predictable flat monthly retainer covering
+                    ongoing management, optimization, VIP support, and technical maintenance.
+                </p>
+            </div>
+            
+            <!-- Payment Terms Box -->
+            <div class="w-full md:w-1/3 bg-white p-6 rounded-xl border-2 border-brand shadow-sm">
+                <h3 class="text-lg font-bold text-brand mb-3 flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    Payment Terms
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-3">
+                    To initiate the project and secure your onboarding slot, a <strong class="text-gray-800">50% upfront payment</strong> of the Month 1 Investment is required.
+                </p>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    The remaining 50% is due based on mutually agreed deployment milestones during the first month.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
